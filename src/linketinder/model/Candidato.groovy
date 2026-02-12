@@ -1,4 +1,4 @@
-package groovy.linketinder.model
+package linketinder.model
 
 class Candidato extends PessoaFisica{
 }

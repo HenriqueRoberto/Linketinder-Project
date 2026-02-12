@@ -1,11 +1,11 @@
-package groovy.linketinder.model
+package linketinder.model
 
-class PessoaJuridica implements Pessoa {
+class PessoaFisica implements Pessoa {
 
     String nome
     String email
-    String cnpj
-    String pais
+    String cpf
+    int idade
     String estado
     String cep
     String descricao
@@ -16,20 +16,20 @@ class PessoaJuridica implements Pessoa {
     String getEstado() { estado }
     String getCep() { cep }
     String getDescricao() { descricao }
-    List<String> getCompetencias() { competencias } //que exige
+    List<String> getCompetencias() { competencias }
 
-    String getCnpj() { cnpj }
-    String getPais() { pais }
+    String getCpf() { cpf }
+    int getIdade() { idade }
 
     @Override
     String toString() {
         return "Nome: " + nome +
-                "\nEmail Corporativo: " + email +
-                "\nCNPJ: " + cnpj +
-                "\nPaís: " + pais +
+                "\nEmail: " + email +
+                "\nCPF: " + cpf +
+                "\nIdade: " + idade +
                 "\nEstado: " + estado +
                 "\nCEP: " + cep +
                 "\nDescrição: " + descricao +
-                "\nCompetências esperadas: " + competencias
+                "\nCompetências: " + competencias
     }
 }
