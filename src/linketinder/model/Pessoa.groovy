@@ -1,4 +1,4 @@
-package groovy.linketinder.model
+package linketinder.model
 
 interface Pessoa {
     String getNome()

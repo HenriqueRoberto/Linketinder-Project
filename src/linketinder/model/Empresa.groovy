@@ -1,4 +1,4 @@
-package groovy.linketinder.model
+package linketinder.model
 
 class Empresa extends PessoaJuridica{
 }
