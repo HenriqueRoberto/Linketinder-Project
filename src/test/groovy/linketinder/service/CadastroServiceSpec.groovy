@@ -1,4 +1,6 @@
 package linketinder.service
 
-class CadastroServiceSpec {
+import spock.lang.Specification
+
+class CadastroServiceSpec extends Specification{
 }

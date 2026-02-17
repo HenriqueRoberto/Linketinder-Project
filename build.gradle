@@ -8,13 +8,14 @@ repositories {
 }
 
 dependencies {
-    // Groovy (escolha alinhada com seu ambiente; se estiver usando Groovy 4/5, isso funciona)
+    // Groovy
     implementation 'org.apache.groovy:groovy:4.0.22'
 
     // Spock (compatível com Groovy 4)
     testImplementation 'org.spockframework:spock-core:2.4-M1-groovy-4.0'
 
-    // JUnit Platform (Spock roda em cima)
+
+    // JUnit Platform
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
