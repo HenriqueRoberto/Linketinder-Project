@@ -1,6 +1,5 @@
 package linketinder.data
 
-import groovy.linketinder.model.*
 import linketinder.model.Candidato
 import linketinder.model.Empresa
 
