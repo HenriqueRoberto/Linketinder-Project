@@ -1,37 +1,35 @@
-# Linketinder MVP – Groovy (MVC Edition)
+## Linketinder MVP – Groovy
 
 **Autor:** Henrique Roberto dos Santos
 
 ---
 
-## 📝 Descrição
+## Descrição
 
-Este projeto é um **MVP (Minimum Viable Product)** do sistema **Linketinder**. A aplicação simula o ecossistema de contratação unindo perfis profissionais e empresas. 
+Este projeto é um **MVP (Minimum Viable Product)** do sistema **Linketinder**, uma aplicação inspirada na ideia de unir o conceito de perfis profissionais (LinkedIn) com a lógica de visualização interativa de perfis (Tinder).
 
-Nesta versão, o foco foi a implementação do padrão **MVC (Model-View-Controller)** rigoroso, separando a lógica de negócio (Services), a interface de terminal (View) e a orquestração do sistema (Controller). O projeto também utiliza **Interfaces** para padronizar os modelos de dados.
+O objetivo é permitir a visualização e interação entre **candidatos** e **empresas** por meio de um menu de terminal. O sistema possibilita que usuários demonstrem interesse (Like) em outros perfis, gerando um "Match" automático quando a reciprocidade é detectada.
 
----
-
-## 🚀 Funcionalidades Atuais
-
-- **Login Automático (Mocado):** Sistema de sessão simulada para agilizar testes, utilizando dados pré-definidos no `DadosMock`.
-- **Menu de Candidato:** - Acesso exclusivo após "Login como Candidato".
-    - Visualização do perfil completo (Pessoa Física).
-    - Listagem detalhada de todas as empresas disponíveis.
-- **Menu de Empresa:** - Acesso exclusivo após "Login como Empresa".
-    - Visualização dos dados corporativos (Pessoa Jurídica).
-    - Listagem detalhada de todos os candidatos disponíveis.
-- **Dados Completos:** Exibição via `toString()` customizado, mostrando CPF, CNPJ, competências, descrição e localização.
+O sistema foi desenvolvido em **Groovy**, utilizando **POO**, **Interfaces** e o padrão **MVC (Model–View–Controller)**.
 
 ---
 
-## 🏗️ Estrutura do Projeto (MVC)
+## Funcionalidades
 
-- **Model:** Uso de interface `Pessoa` e implementações `PessoaFisica` e `PessoaJuridica`.
-- **View:** `MenuView` centraliza toda a interação de entrada (Scanner) e saída (println).
-- **Controller:** `AppController` gerencia o fluxo de navegação entre os menus.
-- **Service:** `LoginService` isola a lógica de recuperação dos usuários ativos.
-- **Data:** `DadosMock` provê a persistência em memória com 5 candidatos e 5 empresas.
+- **Login Automático (Mock):** Sistema de sessão simulada para candidatos e empresas.
+- **Perfil Próprio:** Visualização detalhada dos dados do usuário logado.
+- **Exploração Interativa:** Navegação de perfis um a um, permitindo escolher entre:
+    - **[L] Like:** Demonstrar interesse no perfil.
+    - **[P] Próximo:** Pular para o próximo perfil da lista.
+    - **[S] Sair:** Retornar ao menu principal.
+- **Sistema de Match:** Identificação em tempo real de interesses mútuos.
+- **Lista de Matches:** Listagem completa de todos os perfis onde houve reciprocidade.
+
+### Dados do Candidato
+- Nome, E-mail, CPF, Idade, Estado, CEP, Descrição pessoal e Competências.
+
+### Dados da Empresa
+- Nome, E-mail corporativo, CNPJ, País, Estado, CEP, Descrição da empresa e Competências esperadas.
 
 ---
 
@@ -47,7 +45,6 @@ Nesta versão, o foco foi a implementação do padrão **MVC (Model-View-Control
 ## 💻 Ambiente de Desenvolvimento
 
 - **SO:** Linux (Pop!_OS)
-- **Gerenciador de Build:** Gradle (opcional) ou execução direta via Groovy.
 
 ---
 
