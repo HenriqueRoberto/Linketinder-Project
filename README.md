@@ -53,7 +53,7 @@ O sistema foi desenvolvido em **Groovy**, utilizando **POO**, **Interfaces** e o
 ### Passos
 1. Clone o repositório:
    ```bash
-   git clone [https://github.com/HenriqueRoberto/Linketinder-Project.git](https://github.com/HenriqueRoberto/Linketinder-Project.git)
+   git clone https://github.com/HenriqueRoberto/Linketinder-Project.git
    ```
 2. Acesse a pasta do projeto:
    ```bash
